@@ -1,0 +1,4 @@
+Išrinkite visus irašus, tiek iš knygu tiek iš autoriu lenteliu,
+išrinkdami pasirinktinai du stulpelius.
+
+SELECT authorId, name FROM authors UNION SELECT title, year FROM books;

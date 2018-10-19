@@ -1,0 +1,3 @@
+SELECT books.title as pavadinimas, GROUP_CONCAT(authors.name) as autorius FROM books INNER JOIN authors_books on books.bookId=authors_books.bookId INNER JOIN authors on authors.authorId=authors_books.authorId GROUP BY books.bookId;
+
+utf-8
